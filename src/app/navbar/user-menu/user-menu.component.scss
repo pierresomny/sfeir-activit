@@ -1,0 +1,26 @@
+.login-button {
+  margin-right : 1em;
+}
+
+div.user-info {
+  align-items   : center;
+  background    : lightgray;
+  border        : 0.2em solid gray;
+  border-radius : 0.5em;
+  cursor        : pointer;
+  display       : flex;
+  margin        : 0.5em 0.5em;
+  padding       : 0.3em;
+
+  img {
+    border-radius : 50%;
+    height        : 2.5em;
+    margin-right  : 0.5em;
+    width         : 2.5em;
+  }
+
+  p {
+    color       : #595959;
+    font-weight : bold;
+  }
+}

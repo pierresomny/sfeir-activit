@@ -1,0 +1,8 @@
+<div *ngIf="user; else loggedIn" class="user-info">
+  <img alt="{{ user.name }} profile picture" height="100" ngSrc="{{ user.photoUrl }}" referrerpolicy="no-referrer"
+       width="100">
+  <p>{{ user.name }}</p>
+</div>
+<ng-template #loggedIn>
+  <asl-google-signin-button class='login-button' size='medium' type='icon'></asl-google-signin-button>
+</ng-template>
