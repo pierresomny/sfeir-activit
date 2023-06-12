@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from 'src/app/app.component';
-import { WeeklyGroupComponent } from 'src/app/weekly-group/weekly-group.component';
+import { WeeklyGroupComponent } from 'src/app/pages/weekly-group/weekly-group.component';
+import { WeeklyIdeasComponent } from 'src/app/pages/weekly-ideas/weekly-ideas.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
   { path: 'group', component: WeeklyGroupComponent },
+  { path: 'ideas', component: WeeklyIdeasComponent },
 ];
 
 @NgModule({

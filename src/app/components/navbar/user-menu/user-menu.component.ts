@@ -20,6 +20,7 @@ export class UserMenuComponent implements OnInit {
     this.authService.authState.subscribe(this.userService.observer());
     this.userService.getUser().subscribe((user: SocialUser | null): void => {
       this.user = user;
+      console.log(user?.idToken);
     });
   }
 
